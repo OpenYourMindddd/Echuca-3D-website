@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom';
 import Logo from '../components/Logo';
+import heroBg from '../assets/hero-bg.jpg';
 
 export default function Home() {
   return (
     <>
       <section className="hero hero--brand">
-        <div className="hero__backdrop" aria-hidden="true" />
+        <div
+          className="hero__photo"
+          style={{ backgroundImage: `url(${heroBg})` }}
+          aria-hidden="true"
+        />
+        <div className="hero__overlay" aria-hidden="true" />
         <div className="container hero__inner">
           <h1 className="visually-hidden">echuca.3d</h1>
           <Logo variant="hero" className="hero__logo" />
@@ -20,7 +26,7 @@ export default function Home() {
             <Link to="/products" className="btn btn--primary">
               Products
             </Link>
-            <Link to="/contact" className="btn btn--outline">
+            <Link to="/contact" className="btn btn--outline btn--on-photo">
               Contact us
             </Link>
           </div>
@@ -66,7 +72,7 @@ export default function Home() {
 
       <section className="section cta-band">
         <div className="container cta-band__inner">
-          <Logo variant="cta" onDark className="cta-band__logo" />
+          <Logo variant="cta" className="cta-band__logo" />
           <h2 className="cta-band__title">Have something in mind?</h2>
           <p className="cta-band__text">
             Custom sizes, one-offs, and small batches welcome.

@@ -17,7 +17,9 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar__inner container">
         <NavLink to="/" className="navbar__brand" onClick={closeMenu}>
-          <Logo variant="nav" />
+          <span className="logo-wrap">
+            <Logo variant="nav" />
+          </span>
         </NavLink>
 
         <button
