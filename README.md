@@ -47,7 +47,9 @@ npm run preview
 
 `public/_redirects` sends all routes to `index.html` so React Router works on `/products` and `/contact`.
 
-**If the build fails with `vite: not found`:** Cloudflare was installing with `NODE_ENV=production` and skipping devDependencies. This repo includes `.npmrc` (`production=false`) to fix that. In the dashboard you can also set **Environment variable** `NODE_VERSION` = `20` and use **Build system version** v3 (latest).
+**If the build fails with `vite: not found`:** This repo includes `.npmrc` (`production=false`) so devDependencies (Vite) install in CI.
+
+**If deploy fails with `Wrangler requires at least Node.js v22`:** Set **NODE_VERSION** = `22` in Cloudflare (or rely on `.node-version` / `.nvmrc` in this repo, both set to `22`). Wrangler 4 does not run on Node 20.
 
 ## Products catalogue
 

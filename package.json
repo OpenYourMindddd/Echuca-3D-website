@@ -10,7 +10,7 @@
     "deploy": "npm run build && wrangler deploy"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "dependencies": {
     "react": "^19.1.0",
