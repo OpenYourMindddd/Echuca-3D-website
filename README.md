@@ -24,9 +24,27 @@ npm run build
 npm run preview
 ```
 
-## Adding products
+## Deploy on Cloudflare Pages
 
-Edit `src/data/products.js`. Each product needs at least `id`, `name`, and `description`. Optional: `image`, `category`, and later `price` for checkout.
+1. In [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
+2. Choose GitHub and repo **OpenYourMindddd/Echuca-3D-website**.
+3. Build settings:
+
+   | Setting | Value |
+   |---------|--------|
+   | Framework preset | Vite (or None) |
+   | Build command | `npm run build` |
+   | Build output directory | `dist` |
+
+4. **Save and deploy**. Each push to `main` redeploys automatically.
+
+`public/_redirects` sends all routes to `index.html` so React Router works on `/products` and `/contact`. `.node-version` pins Node 20 for the build.
+
+## Products catalogue
+
+The site is in **coming soon** mode. The Products page shows a placeholder; `src/data/products.js` has an empty `products` array.
+
+When ready to launch, add products to that file and restore the product grid on `src/pages/Products.jsx` (see comments in the file). `ProductCard.jsx` is kept for that launch.
 
 ## Contact form backend
 

@@ -1,16 +1,19 @@
 import ContactForm from '../components/ContactForm';
+import Logo from '../components/Logo';
 
 const BUSINESS_EMAIL = 'echuca3d@gmail.com';
 
 export default function Contact() {
   return (
-    <section className="section page-header contact-page">
+    <section className="section contact-page">
       <div className="container contact-page__grid">
         <header className="contact-page__intro">
-          <h1 className="page-header__title">Contact</h1>
-          <p className="page-header__lead">
-            Questions, custom requests, or product enquiries — we would love to
-            hear from you.
+          <Logo variant="page" className="contact-page__logo" />
+          <p className="label">Get in touch</p>
+          <h1 className="page-title">Contact</h1>
+          <p className="page-lead">
+            Questions, custom requests, or early product enquiries — we would love
+            to hear from you.
           </p>
           <div className="contact-page__details">
             <p>
@@ -19,7 +22,7 @@ export default function Contact() {
               <a href={`mailto:${BUSINESS_EMAIL}`}>{BUSINESS_EMAIL}</a>
             </p>
             <p>
-              <strong>Based in</strong>
+              <strong>Location</strong>
               <br />
               Echuca, Victoria
             </p>
