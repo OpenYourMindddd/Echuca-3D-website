@@ -8,7 +8,7 @@ export default function Contact() {
       <div className="container contact-page__grid">
         <header className="contact-page__intro">
           <span className="logo-wrap logo-wrap--center">
-            <Logo variant="page" className="contact-page__logo" />
+            <Logo variant="page" link className="contact-page__logo" />
           </span>
           <p className="label">Get in touch</p>
           <h1 className="page-title">Contact</h1>

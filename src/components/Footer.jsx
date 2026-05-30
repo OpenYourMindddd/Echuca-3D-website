@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner container">
-        <Logo variant="footer" className="footer__logo" />
+        <Logo variant="footer" link className="footer__logo" />
         <a className="footer__email" href={`mailto:${BUSINESS_EMAIL}`}>
           {BUSINESS_EMAIL}
         </a>

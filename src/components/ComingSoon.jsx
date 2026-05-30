@@ -7,7 +7,7 @@ import Logo from './Logo';
 export default function ComingSoon({ compact = false }) {
   return (
     <div className={`coming-soon${compact ? ' coming-soon--compact' : ''}`}>
-      {!compact && <Logo variant="page" className="coming-soon__logo" />}
+      {!compact && <Logo variant="page" link className="coming-soon__logo" />}
       <p className="coming-soon__badge">Coming soon to the website</p>
       <h1 className="coming-soon__title">
         {compact ? 'Product catalogue on the way' : 'Products'}

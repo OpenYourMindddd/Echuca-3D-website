@@ -16,10 +16,8 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar__inner container">
-        <NavLink to="/" className="navbar__brand" onClick={closeMenu}>
-          <span className="logo-wrap">
-            <Logo variant="nav" />
-          </span>
+        <NavLink to="/" className="navbar__brand" onClick={closeMenu} aria-label="echuca.3d home">
+          <Logo variant="nav" />
         </NavLink>
 
         <button
