@@ -38,7 +38,16 @@ npm run preview
 
 4. **Save and deploy**. Each push to `main` redeploys automatically.
 
-`public/_redirects` sends all routes to `index.html` so React Router works on `/products` and `/contact`. `.node-version` pins Node 20 for the build.
+**Build settings must be:**
+
+| Setting | Value |
+|---------|--------|
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+
+`public/_redirects` sends all routes to `index.html` so React Router works on `/products` and `/contact`.
+
+**If the build fails with `vite: not found`:** Cloudflare was installing with `NODE_ENV=production` and skipping devDependencies. This repo includes `.npmrc` (`production=false`) to fix that. In the dashboard you can also set **Environment variable** `NODE_VERSION` = `20` and use **Build system version** v3 (latest).
 
 ## Products catalogue
 
