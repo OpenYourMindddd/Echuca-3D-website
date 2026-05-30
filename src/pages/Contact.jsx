@@ -1,6 +1,5 @@
 import ContactForm from '../components/ContactForm';
 import Logo from '../components/Logo';
-
 const BUSINESS_EMAIL = 'echuca3d@gmail.com';
 
 export default function Contact() {
@@ -8,7 +7,9 @@ export default function Contact() {
     <section className="section contact-page">
       <div className="container contact-page__grid">
         <header className="contact-page__intro">
-          <Logo variant="page" className="contact-page__logo" />
+          <span className="logo-wrap logo-wrap--center">
+            <Logo variant="page" className="contact-page__logo" />
+          </span>
           <p className="label">Get in touch</p>
           <h1 className="page-title">Contact</h1>
           <p className="page-lead">
