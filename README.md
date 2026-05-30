@@ -45,7 +45,9 @@ npm run preview
 | Build command | `npm run build` |
 | Build output directory | `dist` |
 
-SPA routing (`/products`, `/contact`) is handled by `wrangler.jsonc` → `assets.not_found_handling: "single-page-application"`. Do **not** add a `public/_redirects` file — it conflicts with Workers deploy.
+SPA routing (`/products`, `/contact`) is handled by `wrangler.jsonc` → `assets.not_found_handling: "single-page-application"`. Do **not** add `public/_redirects` — it conflicts with Workers deploy (error 100324).
+
+If deploy still mentions `_redirects` after removing it, **clear the Cloudflare build cache** (Settings → Build → clear cache) and redeploy. The `build` script also deletes any stale `dist/_redirects` restored from cache.
 
 **If the build fails with `vite: not found`:** This repo includes `.npmrc` (`production=false`) so devDependencies (Vite) install in CI.
 
