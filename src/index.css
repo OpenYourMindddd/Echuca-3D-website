@@ -266,7 +266,7 @@ ul {
   color: #fff;
 }
 
-/* --- Logo (cream wordmark on black) --- */
+/* --- Logo (light = cream on black, dark = charcoal on black) --- */
 .logo-wrap {
   display: inline-flex;
   border-radius: var(--radius-sm);
@@ -291,7 +291,11 @@ ul {
   max-width: 7.5rem;
 }
 
-.logo--hero {
+.logo--dark.logo--nav {
+  max-width: 7rem;
+}
+
+.logo--light.logo--hero {
   width: min(100%, 16rem);
   margin-inline: auto;
   border-radius: var(--radius-md);
