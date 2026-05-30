@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Logo from '../components/Logo';
 import ProductCard from '../components/ProductCard';
 import { featuredProducts } from '../data/products';
 
@@ -8,9 +9,8 @@ export default function Home() {
       <section className="hero">
         <div className="hero__content container">
           <p className="hero__eyebrow">Locally made in Echuca</p>
-          <h1 className="hero__title">
-            Echuca <span className="hero__title-divider">|</span> 3D
-          </h1>
+          <h1 className="hero__title visually-hidden">Echuca | 3D</h1>
+          <Logo variant="hero" className="hero__logo" />
           <p className="hero__subtitle">
             Custom products, practical designs, and locally made solutions
           </p>

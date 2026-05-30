@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from './Logo';
 
 const links = [
   { to: '/', label: 'Home', end: true },
@@ -16,7 +17,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar__inner container">
         <NavLink to="/" className="navbar__brand" onClick={closeMenu}>
-          Echuca <span className="navbar__brand-divider">|</span> 3D
+          <Logo variant="nav" />
         </NavLink>
 
         <button

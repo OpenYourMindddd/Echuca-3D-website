@@ -1,3 +1,5 @@
+import Logo from './Logo';
+
 const BUSINESS_EMAIL = 'echuca3d@gmail.com';
 
 export default function Footer() {
@@ -6,8 +8,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner container">
-        <p className="footer__brand">Echuca | 3D</p>
-        <p className="footer__tagline">Custom products, made locally.</p>
+        <div className="footer__logo-wrap">
+          <Logo variant="footer" />
+        </div>
         <a className="footer__email" href={`mailto:${BUSINESS_EMAIL}`}>
           {BUSINESS_EMAIL}
         </a>
