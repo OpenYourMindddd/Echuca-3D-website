@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/strip-spa-redirects.mjs",
+    "build": "node scripts/clean-dist.mjs && vite build && node scripts/strip-spa-redirects.mjs",
     "preview": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy"
   },

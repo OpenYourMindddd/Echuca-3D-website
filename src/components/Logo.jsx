@@ -1,4 +1,5 @@
-const LOGO_SRC = '/logo.png';
+import logoSrc from '../assets/logo.png';
+
 const LOGO_ALT = 'echuca.3d — custom products and practical designs, locally made';
 
 const sizes = {
@@ -14,7 +15,7 @@ export default function Logo({ variant = 'nav', onDark = false, className = '' }
 
   return (
     <img
-      src={LOGO_SRC}
+      src={logoSrc}
       alt={LOGO_ALT}
       className={`logo logo--${variant}${onDark ? ' logo--on-dark' : ''}${
         className ? ` ${className}` : ''
