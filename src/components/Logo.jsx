@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logoVideo from '../assets/echuca.3d.mp4';
+import logoVideo from '../assets/trimmed.mp4';
 import logoLight from '../assets/logo.png';
 import logoDark from '../assets/button-mark.png';
 
