@@ -7,7 +7,7 @@ export default function Home() {
       <section className="hero hero--brand">
         <div className="hero__backdrop" aria-hidden="true" />
         <div className="container hero__inner">
-          <h1 className="visually-hidden">Echuca | 3D</h1>
+          <h1 className="visually-hidden">echuca.3d</h1>
           <Logo variant="hero" className="hero__logo" />
           <p className="hero__tagline">
             Custom products · Practical designs · Local solutions
@@ -66,7 +66,7 @@ export default function Home() {
 
       <section className="section cta-band">
         <div className="container cta-band__inner">
-          <Logo variant="cta" className="cta-band__logo" />
+          <Logo variant="cta" onDark className="cta-band__logo" />
           <h2 className="cta-band__title">Have something in mind?</h2>
           <p className="cta-band__text">
             Custom sizes, one-offs, and small batches welcome.

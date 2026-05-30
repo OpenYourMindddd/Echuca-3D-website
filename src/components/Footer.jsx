@@ -8,13 +8,11 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner container">
-        <div className="footer__logo-wrap">
-          <Logo variant="footer" />
-        </div>
+        <Logo variant="footer" onDark className="footer__logo" />
         <a className="footer__email" href={`mailto:${BUSINESS_EMAIL}`}>
           {BUSINESS_EMAIL}
         </a>
-        <p className="footer__copy">&copy; {year} Echuca | 3D. All rights reserved.</p>
+        <p className="footer__copy">&copy; {year} echuca.3d. All rights reserved.</p>
       </div>
     </footer>
   );

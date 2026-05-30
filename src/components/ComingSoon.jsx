@@ -7,11 +7,6 @@ import Logo from './Logo';
 export default function ComingSoon({ compact = false }) {
   return (
     <div className={`coming-soon${compact ? ' coming-soon--compact' : ''}`}>
-      <div className="coming-soon__mark" aria-hidden="true">
-        <span />
-        <span />
-        <span />
-      </div>
       {!compact && <Logo variant="page" className="coming-soon__logo" />}
       <p className="coming-soon__badge">Coming soon to the website</p>
       <h1 className="coming-soon__title">
