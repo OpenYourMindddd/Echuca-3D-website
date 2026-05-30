@@ -45,7 +45,7 @@ npm run preview
 | Build command | `npm run build` |
 | Build output directory | `dist` |
 
-`public/_redirects` sends all routes to `index.html` so React Router works on `/products` and `/contact`.
+SPA routing (`/products`, `/contact`) is handled by `wrangler.jsonc` → `assets.not_found_handling: "single-page-application"`. Do **not** add a `public/_redirects` file — it conflicts with Workers deploy.
 
 **If the build fails with `vite: not found`:** This repo includes `.npmrc` (`production=false`) so devDependencies (Vite) install in CI.
 
